@@ -160,7 +160,7 @@ def analyze_file_with_ai(file_path: Path, context=""):
 # Suppress pdfplumber/pdfminer warnings about missing CropBox
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
-def organize_files(source_dir=Path.cwd(), sorted_folder="penis", sort_by_type=True, sort_by_year=True, \
+def organize_files(source_dir=Path.cwd(), sorted_folder="organized", sort_by_type=True, sort_by_year=True, \
                    move_files=False, analyze_oldest_pdf=False, analyze_newest_pdf=False):
     
     Fore.RESET
